@@ -29,7 +29,7 @@
 
 @layer components {
   .btn-primary {
-    @apply px-6 py-3 bg-gradient-to-r from-primary-500 to-primary-600 text-white rounded-xl font-medium shadow-lg shadow-primary-500/30 hover:shadow-xl hover:shadow-primary-500/40 hover:scale-105 transition-all duration-200;
+    @apply px-6 py-3 bg-black text-white rounded-xl font-medium shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200;
   }
 
   .btn-secondary {
@@ -51,6 +51,6 @@
   }
 
   .text-gradient {
-    @apply bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent;
+    @apply text-black;
   }
 }
