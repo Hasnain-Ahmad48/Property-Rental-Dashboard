@@ -15,10 +15,10 @@ export default function Navbar() {
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
                     <Link to="/" className="flex items-center space-x-2 group">
-                        <div className="bg-gradient-to-r from-primary-500 to-secondary-500 p-2 rounded-xl group-hover:scale-110 transition-transform duration-200">
+                        <div className="bg-black p-2 rounded-xl group-hover:scale-110 transition-transform duration-200">
                             <HiHome className="text-white text-xl" />
                         </div>
-                        <span className="text-xl font-bold text-gradient hidden sm:block">
+                        <span className="text-xl font-bold text-black dark:text-white hidden sm:block">
                             Property Rental
                         </span>
                     </Link>
@@ -38,7 +38,7 @@ export default function Navbar() {
                             <HiHeart className="text-xl" />
                             <span>Favorites</span>
                             {favorites.length > 0 && (
-                                <span className="bg-gradient-to-r from-primary-500 to-secondary-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+                                <span className="bg-black text-white text-xs font-bold px-2 py-1 rounded-full">
                                     {favorites.length}
                                 </span>
                             )}
@@ -94,7 +94,7 @@ export default function Navbar() {
                                     <span>Favorites</span>
                                 </span>
                                 {favorites.length > 0 && (
-                                    <span className="bg-gradient-to-r from-primary-500 to-secondary-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+                                    <span className="bg-black text-white text-xs font-bold px-2 py-1 rounded-full">
                                         {favorites.length}
                                     </span>
                                 )}

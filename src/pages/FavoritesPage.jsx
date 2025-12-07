@@ -69,8 +69,8 @@ export default function FavoritesPage() {
                 {/* Favorites Display */}
                 {!loading && favoriteProperties.length > 0 && (
                     <div className={`grid ${viewMode === 'grid'
-                            ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
-                            : 'grid-cols-1'
+                        ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
+                        : 'grid-cols-1'
                         } gap-6`}>
                         {favoriteProperties.map((property) => (
                             <PropertyCard
@@ -86,7 +86,7 @@ export default function FavoritesPage() {
                 {/* Empty State */}
                 {!loading && favoriteProperties.length === 0 && (
                     <div className="text-center py-16 animate-fade-in">
-                        <div className="bg-gradient-to-r from-primary-500 to-secondary-500 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <div className="bg-black w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                             <HiHeart className="text-4xl text-white" />
                         </div>
                         <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">

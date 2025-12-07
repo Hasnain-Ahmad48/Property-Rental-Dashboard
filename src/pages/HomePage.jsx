@@ -70,7 +70,7 @@ export default function HomePage() {
                 {/* Header */}
                 <div className="mb-8 animate-fade-in">
                     <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-                        Find Your Perfect <span className="text-gradient">Rental</span>
+                        Find Your Perfect <span className="text-black dark:text-white">Rental</span>
                     </h1>
                     <p className="text-gray-600 dark:text-gray-400 text-lg">
                         Discover amazing properties across the country
@@ -120,8 +120,8 @@ export default function HomePage() {
                         {/* Loading State */}
                         {loading && (
                             <div className={`grid ${viewMode === 'grid'
-                                    ? 'grid-cols-1 md:grid-cols-2 xl:grid-cols-3'
-                                    : 'grid-cols-1'
+                                ? 'grid-cols-1 md:grid-cols-2 xl:grid-cols-3'
+                                : 'grid-cols-1'
                                 } gap-6`}>
                                 {[...Array(6)].map((_, i) => (
                                     <SkeletonCard key={i} />
@@ -132,8 +132,8 @@ export default function HomePage() {
                         {/* Properties Display */}
                         {!loading && filteredProperties.length > 0 && (
                             <div className={`grid ${viewMode === 'grid'
-                                    ? 'grid-cols-1 md:grid-cols-2 xl:grid-cols-3'
-                                    : 'grid-cols-1'
+                                ? 'grid-cols-1 md:grid-cols-2 xl:grid-cols-3'
+                                : 'grid-cols-1'
                                 } gap-6`}>
                                 {filteredProperties.map((property) => (
                                     <PropertyCard
